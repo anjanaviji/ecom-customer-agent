@@ -4,3 +4,7 @@ langgraph
 python-dotenv
 requests
 pytest
+langchain_chroma
+langchain_huggingface
+sentence-transformers
+langchain-text-splitters

@@ -34,9 +34,7 @@ dataset = [
     RAGRetrievalExample(
     query="When can I expect the refund?",
     relevant_chunks={
-        "return_policy_3": 3,
         "refund_policy_0": 3,
-        "return_policy_2": 3,
         "refund_policy_1": 3,
         "refund_policy_3": 2,
     },
@@ -77,11 +75,6 @@ dataset = [
         relevant_chunks={"cancellation_policy_0": 3, "cancellation_policy_1": 2},
     ),
 
-    # Specific condition
-    RAGRetrievalExample(
-        query="Is there a cancellation fee?",
-        relevant_chunks={"cancellation_policy_1": 2},
-    ),
 
 
     # ============================================================
@@ -135,4 +128,9 @@ dataset = [
         query="How long does international shipping take?",
         relevant_chunks={},
     ),
+    
+    RAGRetrievalExample(
+        query="Is there a cancellation fee?",
+        relevant_chunks={},
+    )
 ]
